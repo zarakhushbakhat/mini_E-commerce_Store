@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | Nexora</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="page-loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">Nexora</div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">N</span>
+        <span class="logo-text">Nexo<em>ra</em></span>
+      </a>
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" data-nav-menu>
+        <a href="index.html">Home</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="index.html#products">Shop</a>
+        <a class="cart-link" href="cart.html">Cart <span data-cart-count>0</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="cart-main">
+    <div class="cart-hero reveal visible">
+      <span class="eyebrow">Checkout Desk</span>
+      <h1>Your Cart</h1>
+    </div>
+    <div data-cart-page></div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Nexora Store. </p>
+    <span class="footer-logo">Nexora</span>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

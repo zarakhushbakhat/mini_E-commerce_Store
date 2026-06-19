@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora — Premium Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">Nexora</div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">N</span>
+        <span class="logo-text">Nexo<em>ra</em></span>
+      </a>
+
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" data-nav-menu>
+        <a href="index.html">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Shop</a>
+        <a class="cart-link" href="cart.html" aria-label="Shopping cart">
+          Cart <span data-cart-count>0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy reveal visible">
+        <span class="eyebrow">Summer Collection 2026</span>
+        <h1>Gear built for <em>bold</em> living.</h1>
+        <p class="hero-sub">Premium tech, fashion, and gaming accessories — all in one carefully curated dark store with real character.</p>
+        <div class="hero-actions">
+          <a class="button primary ripple" href="#products">Shop Now</a>
+          <a class="button ghost" href="cart.html">View Cart</a>
+        </div>
+      </div>
+
+      <div class="hero-showcase reveal visible" aria-hidden="true">
+        <div class="hero-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=480&h=480&fit=crop&auto=format"
+            alt="Featured headphones"
+          >
+        </div>
+        <div class="hero-tags">
+          <div class="htag htag-1">★ 4.8 · Top Pick</div>
+          <div class="htag htag-2">🚚 Free Shipping</div>
+          <div class="htag htag-3">12 products</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section reveal" data-stats aria-label="Store statistics"></section>
+
+    <!-- SHOP -->
+    <section class="shop-section" id="products">
+      <div class="section-head reveal">
+        <span class="eyebrow" id="categories">The Catalog</span>
+        <h2>Explore the collection</h2>
+      </div>
+
+      <!-- FILTERS -->
+      <div class="control-panel reveal">
+        <div class="search-wrap">
+          <div class="control-label">Search</div>
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="search" data-search placeholder="Search products…">
+          </div>
+        </div>
+
+        <div class="filter-wrap">
+          <div class="control-label">Category</div>
+          <div class="chips" data-category-filter></div>
+        </div>
+
+        <div class="sort-wrap">
+          <div class="control-label">Sort by</div>
+          <select data-sort>
+            <option>Default</option>
+            <option>Price Low to High</option>
+            <option>Price High to Low</option>
+            <option>Highest Rated</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- PRODUCT GRID -->
+      <div class="product-grid" data-product-grid></div>
+    </section>
+  </main>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="quick-view" data-quick-view aria-modal="true" aria-label="Quick view">
+    <div class="quick-view-card">
+      <button class="modal-close" data-close-modal aria-label="Close">×</button>
+      <div class="quick-view-body" data-quick-view-body></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Nexora Store. </p>
+    <span class="footer-logo">Nexora</span>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
